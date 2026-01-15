@@ -1,45 +1,28 @@
-
-#include <algorithm>
-#include <array>
-#include <chrono>
 #include <iostream>
-#include <iterator>
+#include <array>
 #include <string>
 #include <vector>
-
-// Include your sorts (assuming same directory)
-#include "insertionsort.cpp" // Or compile separately without this
-#include "mergesort.cpp"     // Or compile separately without this
-
-using namespace std;
+#include <algorithm>
+#include <iterator>
+#include <chrono>
 
 int main(int argc, char *argv[]) {
 
-  cout << "Problem Size\tTime Taken (seconds)" << endl;
-  for (int size = 10; size <= 100000000; size *= 10) {
+	std::cout << "Problem Size\tTime Taken (seconds)" << std::endl;
+	for (int size = 10; size <= 100000000; size *= 10) {
+	
+		int *a = new int[size];
+	
+		std::generate(a, a+size, std::rand);
+		auto starttime = std::chrono::steady_clock::now();
+		std::sort(a, a+size);
+		auto endtime = std::chrono::steady_clock::now();
+		std::chrono::duration<double> timetaken = endtime - starttime;
+		std::cout << size << "\t" << timetaken.count() << std::endl;
 
-    int *a = new int[size];
+		delete[] a;
+	}
 
-    generate(a, a + size, rand);
-    auto starttime = chrono::steady_clock::now();
-
-    // Test insertionsort (use for small sizes only)
-    // insertionsort(a, a + size);
-
-    // Test mergesort (add temp)
-    // int *temp = new int[size];
-    // mergesort(a, a + size, temp);
-    // delete[] temp;
-
-    // Test sort (original)
-    sort(a, a + size);
-
-    auto endtime = chrono::steady_clock::now();
-    chrono::duration<double> timetaken = endtime - starttime;
-    cout << size << "\t\t" << timetaken.count() << endl;
-
-    delete[] a;
-  }
-
-  return 0;
+	return 0;
 }
+
