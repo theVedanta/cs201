@@ -21,13 +21,13 @@ int main(int argc, char *argv[]) {
 
     // -------------------- SORTS ----------------------------
     
-    insertionsort(a, a + size);
+    // insertionsort(a, a + size);
 
     // int *temp = new int[size];
     // mergesort(a, a + size, temp);
     // delete[] temp;
 
-    // std::sort(a, a + size);
+    std::sort(a, a + size);
     
     // -------------------- SORTS ----------------------------
 
