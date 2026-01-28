@@ -1,16 +1,21 @@
 /*
   Name: Vedanta Somnathe
+
   Email: vpsomnathe@crimson.ua.edu
+
   Course Section: Spring 2026 CS 201 – 002
+
   Homework #: 0
-  To Compile: g++ perftest.cpp insertionsort.cpp mergesort.cpp -o main
-  -std=c++20 To Run: ./main To Use:
-  ```cpp
+
+  To Compile:
+  With Driver file: g++ perftest.cpp insertionsort.cpp mergesort.cpp -o main
+  Without: g++ insertionsort.cpp -o main
+
+  To Run: ./main
+
+  To Use:
   std::array<int, 10> temp1;
   mergesort(a1.begin(), a1.end(), temp1.begin());
-  ```
-
-  ^ Above instructions are for Mac
 */
 
 #include <algorithm>
