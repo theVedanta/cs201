@@ -8,8 +8,8 @@
   Homework #: 0
 
   To Compile:
-  With Driver file: g++ perftest.cpp insertionsort.cpp mergesort.cpp -o main
-  Without: g++ insertionsort.cpp -o main
+  With Driver file: g++ perftest.cpp mergesort.cpp mergesort.cpp -o main
+  Without: g++ mergesort.cpp -o main
 
   To Run: ./main
 
