@@ -1,0 +1,4 @@
+input0 -> Time Taken (seconds): 0.000102083
+input1 -> Time Taken (seconds): 0.000327
+input2 -> Time Taken (seconds): 0.641192
+input3 -> Time Taken (seconds): 1.02584

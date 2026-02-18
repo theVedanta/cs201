@@ -1,10 +1,10 @@
 /*
-Name: Vedanta Somnathe
-Email: vpsomnathe@crimson.ua.edu
-Course Section: Spring 2026 CS 201 – 002
-Homework #: 1
-Compile: g++ -std=c++20 wordfreq.cpp -o wordfreq
-Run:     ./wordfreq < input1.txt
+  Name: Vedanta Somnathe
+  Email: vpsomnathe@crimson.ua.edu
+  Course Section: Spring 2026 CS 201 – 002
+  Homework #: 1
+  Compile: g++ wordfreq.cpp -o wordfreq
+  Run:     ./wordfreq < input1.txt
 */
 
 #include <algorithm>
