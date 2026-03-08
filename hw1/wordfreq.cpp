@@ -56,6 +56,9 @@ int main() {
     cout << wc.word << ": " << wc.count << "\n";
   }
 
+  // Number of distinct words
+  cout << "Distinct words: " << freq.size() << "\n";
+
   auto endtime = std::chrono::steady_clock::now();
   std::chrono::duration<double> timetaken = endtime - starttime;
   cerr << "Time Taken (seconds): " << timetaken.count() << "\n";
