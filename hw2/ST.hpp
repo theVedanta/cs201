@@ -3,7 +3,7 @@
   Email: vpsomnathe@crimson.ua.edu
   Course Section: Spring 2026 CS 201 – 002
   Homework #: 2
-  To Compile: g++ -std=c++20 -o STMain STMain.cpp
+  To Compile: g++ -o STMain STMain.cpp
   To Run:     ./STMain
 */
 

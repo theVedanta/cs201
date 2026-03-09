@@ -3,7 +3,7 @@
   Email: vpsomnathe@crimson.ua.edu
   Course Section: Spring 2026 CS 201 – 002
   Homework #: 2
-  To Compile: g++ -std=c++20 wordfreq.cpp -o wordfreq
+  To Compile: g++ wordfreq.cpp -o wordfreq
   To Run:     ./wordfreq < input1.txt
 */
 
