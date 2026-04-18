@@ -91,23 +91,18 @@ public:
     }
   }
 
-  void dfs() {
+  void dfs() { dfs(0); }
+
+  void dfs(int s) {
     time = 0;
     for (int i = 0; i < _V; ++i) {
       vertices[i].visited = false;
       vertices[i].previous = -1;
+      vertices[i].distance = 65535;
+      vertices[i].finish = 0;
     }
 
-    for (int i = 0; i < _V; ++i) {
-      if (!vertices[i].visited) {
-        dfs_visit(i);
-      }
-    }
-
-    for (int i = 0; i < _V; ++i) {
-      std::cout << i << ": " << vertices[i].distance << "/"
-                << vertices[i].finish << std::endl;
-    }
+    dfs_visit(s);
   }
 
   void dfs_visit(int u) {
